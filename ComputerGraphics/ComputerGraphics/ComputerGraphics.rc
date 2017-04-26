@@ -1,0 +1,1175 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\ComputerGraphics.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""    // 打印/打印预览资源\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""        // MFC 功能区和控制条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ComputerGraphics.ico"
+IDR_ComputerGraphicTYPE ICON                    "res\\ComputerGraphicsDoc.ico"
+IDI_FILE_VIEW           ICON                    "res\\file_view.ico"
+IDI_FILE_VIEW_HC        ICON                    "res\\file_view_hc.ico"
+IDI_CLASS_VIEW          ICON                    "res\\class_view.ico"
+IDI_CLASS_VIEW_HC       ICON                    "res\\class_view_hc.ico"
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_SORT                BITMAP                  "res\\sort.bmp"
+IDB_SORT_24             BITMAP                  "res\\sort_hc.bmp"
+IDB_FILE_VIEW           BITMAP                  "res\\fileview.bmp"
+IDB_FILE_VIEW_24        BITMAP                  "res\\fileview_hc.bmp"
+IDB_CLASS_VIEW          BITMAP                  "res\\classview.bmp"
+IDB_CLASS_VIEW_24       BITMAP                  "res\\classview_hc.bmp"
+IDR_EXPLORER            BITMAP                  "res\\explorer.bmp"
+IDB_EXPLORER_24         BITMAP                  "res\\explorer_hc.bmp"
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+IDB_MENU_IMAGES_24      BITMAP                  "res\\menuimages_hc.bmp"
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_SORT TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_SORT_MENU
+    BUTTON      ID_NEW_FOLDER
+END
+
+IDR_EXPLORER TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_PROPERTIES
+END
+
+IDR_MENU_IMAGES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    SEPARATOR
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+    BUTTON      ID_SORTING_SORTALPHABETIC
+    BUTTON      ID_SORTING_SORTBYTYPE
+    BUTTON      ID_SORTING_SORTBYACCESS
+    BUTTON      ID_SORTING_GROUPBYTYPE
+END
+
+IDR_PROPERTIES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 ComputerGraphics(&A)...",  ID_APP_ABOUT
+    END
+END
+
+IDR_ComputerGraphicTYPE MENU
+BEGIN
+    MENUITEM "Line",                        ID_LINE
+    POPUP "Fractal"
+    BEGIN
+        MENUITEM "Snow",                        ID_FRACTAL_SNOW
+        MENUITEM "Spiral",                      ID_FRACTAL_SPIRAL
+    END
+    POPUP "Line"
+    BEGIN
+        MENUITEM "DDA",                         ID_LINE_DDA
+        MENUITEM "MidBresenham",                32782
+        MENUITEM "Bresenham",                   32783
+    END
+    POPUP "Circle"
+    BEGIN
+        MENUITEM "MidBresenham",                32784
+    END
+    POPUP "Ellipse"
+    BEGIN
+        MENUITEM "MidBresenham",                32785
+    END
+    POPUP "Fill"
+    BEGIN
+        MENUITEM "Boundary",                    ID_FILL_BOUNDARY
+        MENUITEM "Flood",                       ID_FILL_FLOOD
+    END
+    POPUP "Line"
+    BEGIN
+        MENUITEM "Type",                        ID_LINE_TYPE
+        MENUITEM "Width",                       ID_LINE_WIDTH
+    END
+    POPUP "2DTrasformation"
+    BEGIN
+        MENUITEM "Translation",                 ID_2D_TRANSLATION
+        MENUITEM "Scaling",                     ID_2D_SCALING
+        MENUITEM "Rotation",                    ID_2D_ROTATION
+        MENUITEM "Symmetrical",                 ID_2D_SYMMETRICAL
+        MENUITEM "Shear",                       ID_2D_SHEAR
+    END
+    POPUP "3DTrasformation"
+    BEGIN
+        MENUITEM "Translation",                 ID_3D_TRANSLATION
+        MENUITEM "Scaling",                     ID_3D_SCALING
+        MENUITEM "Rotation",                    ID_3D_ROTATION
+        MENUITEM "Symmetrical",                 ID_3D_SYMMETRICAL
+        MENUITEM "Shear",                       ID_3D_SHEAR
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_SORT MENU
+BEGIN
+    POPUP "排序"
+    BEGIN
+        MENUITEM "按字母顺序排序(&S)",                 ID_SORTING_SORTALPHABETIC
+        MENUITEM "按类型排序(&T)",                   ID_SORTING_SORTBYTYPE
+        MENUITEM "按访问排序(&E)",                   ID_SORTING_SORTBYACCESS
+        MENUITEM "按类型分组(&Y)",                   ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_EXPLORER MENU
+BEGIN
+    POPUP "资源管理器"
+    BEGIN
+        MENUITEM "打开(&O)",                      ID_OPEN
+        MENUITEM "打开方式(&W)....",                ID_OPEN_WITH
+        MENUITEM SEPARATOR
+        MENUITEM "编译(&C)",                      ID_DUMMY_COMPILE
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "移除(&R)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "属性(&P)...",                   ID_PROPERTIES
+    END
+END
+
+IDR_OUTPUT_POPUP MENU
+BEGIN
+    POPUP "弹出项"
+    BEGIN
+        MENUITEM "复制(&C)",                      ID_EDIT_COPY
+        MENUITEM "清除(&C)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏(&H)",                      ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "关于 ComputerGraphics(&A)...",  ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Windows 7(&D)",               ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ComputerGraphics"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ComputerGraphics，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_LineDialog DIALOGEX 0, 0, 264, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LineParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,135,128,50,14
+    PUSHBUTTON      "取消",IDCANCEL,207,128,50,14
+    EDITTEXT        IDC_X1,61,30,52,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y1,61,54,52,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_X2,61,77,52,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y2,61,102,52,13,ES_AUTOHSCROLL
+    LTEXT           "X1",IDC_STATIC,51,35,10,8
+    LTEXT           "Y1",IDC_STATIC,52,58,9,8
+    LTEXT           "X2",IDC_STATIC,51,82,10,8
+    LTEXT           "Y2",IDC_STATIC,52,106,9,8
+END
+
+IDD_CircleDIALOG DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CircleParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    EDITTEXT        IDC_EDIT1,60,30,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,60,61,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,60,90,48,14,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,40,30,20,14
+    LTEXT           "Y:",IDC_STATIC,40,61,19,14
+    LTEXT           "R:",IDC_STATIC,40,90,19,14
+END
+
+IDD_EllipseDIALOG DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EllipseParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    EDITTEXT        IDC_EDIT1,90,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,90,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,90,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,90,119,40,14,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,60,30,30,14
+    LTEXT           "Y:",IDC_STATIC,60,60,30,14
+    LTEXT           "A:",IDC_STATIC,60,90,30,14
+    LTEXT           "B:",IDC_STATIC,60,119,30,14
+END
+
+IDD_LINETYPEDIALOG DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LineTypeParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    EDITTEXT        IDC_EDIT1,61,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,61,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,61,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,61,120,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,180,62,48,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "X0",IDC_STATIC,36,30,25,14
+    LTEXT           "Y0",IDC_STATIC,36,60,25,14
+    LTEXT           "X1",IDC_STATIC,36,90,25,14
+    LTEXT           "Y1",IDC_STATIC,36,120,25,13
+    LTEXT           "Line Type",IDC_STATIC,145,60,35,14
+END
+
+IDD_LINEWIDTHDIALOG DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LineWidthParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    EDITTEXT        IDC_EDIT1,60,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,60,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,60,90,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,60,120,40,13,ES_AUTOHSCROLL
+    LTEXT           "X0",IDC_STATIC,41,36,10,8
+    LTEXT           "Y0",IDC_STATIC,41,66,9,8
+    LTEXT           "X1",IDC_STATIC,41,95,10,8
+    LTEXT           "Y1",IDC_STATIC,41,125,9,8
+    LTEXT           "Width",IDC_STATIC,130,66,20,8
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,161,66,100,8
+    EDITTEXT        IDC_EDIT5,180,89,40,14,ES_AUTOHSCROLL
+END
+
+IDD_TranslationDialog DIALOGEX 0, 0, 311, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "TranslationParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,164,50,14
+    PUSHBUTTON      "取消",IDCANCEL,254,164,50,14
+    LTEXT           "Translate X",IDC_STATIC,60,30,42,14
+    LTEXT           "Translate Y",IDC_STATIC,60,59,42,14
+    LTEXT           "Translate Z",IDC_STATIC_Z,60,90,42,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT1,102,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,102,59,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,102,90,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+END
+
+IDD_RECTDIALOG DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PolyonPoints"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    LTEXT           "Point 1",IDC_STATIC,30,30,23,8
+    LTEXT           "Point 2",IDC_STATIC,30,60,23,8
+    LTEXT           "Point 3",IDC_STATIC,30,90,23,8
+    LTEXT           "Point 4",IDC_STATIC,30,120,23,8
+    LTEXT           "x",IDC_STATIC,90,12,8,8
+    LTEXT           "Y",IDC_STATIC,150,12,8,8
+    EDITTEXT        IDC_EDIT1,90,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,150,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,90,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,150,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,90,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,150,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,90,120,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,150,120,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,210,30,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT10,210,60,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT11,210,90,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT12,210,120,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Z",IDC_STATIC_Z,210,12,8,8,NOT WS_VISIBLE
+END
+
+IDD_SCALINGDIALOG DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ScalingParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    LTEXT           "Scaling X",IDC_STATIC,60,52,31,8
+    LTEXT           "Scaling Y",IDC_STATIC,60,82,31,8
+    LTEXT           "Scaling Z",IDC_STATIC_SCALING,60,112,31,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT1,120,46,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,120,76,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,120,106,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+END
+
+IDD_ROTATIONDIALOG2D DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rotation2DParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    LTEXT           "CCW Rotation Angel",IDC_STATIC,60,70,67,8
+    EDITTEXT        IDC_EDIT1,150,66,47,12,ES_AUTOHSCROLL
+    LTEXT           "。",IDC_STATIC,198,62,8,8
+END
+
+IDD_SYMMETRICALDIALOG2D DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Symmetrical2DParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    PUSHBUTTON      "Origin",IDC_BUTTON1,60,59,50,14
+    PUSHBUTTON      "Line Y=X",IDC_BUTTON2,149,59,50,14
+    PUSHBUTTON      "X-axis",IDC_BUTTON3,60,90,50,14
+    PUSHBUTTON      "Y-axis",IDC_BUTTON4,149,90,50,14
+END
+
+IDD_SHEARDIALOG DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ShearParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    LTEXT           "X-Shear",IDC_STATIC,60,52,30,8
+    LTEXT           "Y-Shear",IDC_STATIC,60,82,30,8
+    LTEXT           "Z-Shear",IDC_STATIC_ZSHEAR,60,112,30,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT1,120,46,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,180,46,30,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT3,120,76,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,180,76,30,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT5,120,106,30,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT6,180,106,30,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Y:",IDC_STATIC,112,52,8,8
+    LTEXT           "Z:",IDC_STATIC_XZ,172,52,8,8,NOT WS_VISIBLE
+    LTEXT           "X:",IDC_STATIC,112,82,8,8
+    LTEXT           "Z:",IDC_STATIC_YZ,172,82,8,8,NOT WS_VISIBLE
+    LTEXT           "X:",IDC_STATIC_ZX,112,112,8,8,NOT WS_VISIBLE
+    LTEXT           "Y:",IDC_STATIC_ZY,172,112,8,8,NOT WS_VISIBLE
+END
+
+IDD_ROTATIONDIALOG3D DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rotation3DParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    LTEXT           "Rotation Axis",IDC_STATIC,60,52,43,8
+    LTEXT           "CCW Rotation Angel",IDC_STATIC,48,82,67,8
+    COMBOBOX        IDC_COMBO1,120,48,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,120,76,43,14,ES_AUTOHSCROLL
+    LTEXT           "。",IDC_STATIC,163,71,10,8
+END
+
+IDD_SYMMETRICALDIALOG3D DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Symmetrical3DParameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+    PUSHBUTTON      "关于原点对称",IDC_BUTTON1,30,46,60,14
+    PUSHBUTTON      "关于X轴对称",IDC_BUTTON2,30,76,60,14
+    PUSHBUTTON      "关于Y轴对称",IDC_BUTTON3,120,76,60,14
+    PUSHBUTTON      "关于Z轴对称",IDC_BUTTON4,210,76,60,14
+    PUSHBUTTON      "关于XOY面对称",IDC_BUTTON5,30,106,60,14
+    PUSHBUTTON      "关于XOZ面对称",IDC_BUTTON6,120,106,60,14
+    PUSHBUTTON      "关于YOZ面对称",IDC_BUTTON7,210,106,60,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "ComputerGraphics"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ComputerGraphics.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "ComputerGraphics.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_LineDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        VERTGUIDE, 61
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+        HORZGUIDE, 30
+        HORZGUIDE, 43
+        HORZGUIDE, 48
+        HORZGUIDE, 54
+        HORZGUIDE, 66
+        HORZGUIDE, 78
+        HORZGUIDE, 90
+        HORZGUIDE, 102
+        HORZGUIDE, 114
+    END
+
+    IDD_CircleDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 40
+        VERTGUIDE, 60
+        VERTGUIDE, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 30
+        HORZGUIDE, 44
+        HORZGUIDE, 61
+        HORZGUIDE, 75
+        HORZGUIDE, 90
+        HORZGUIDE, 104
+    END
+
+    IDD_EllipseDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 60
+        VERTGUIDE, 90
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 30
+        HORZGUIDE, 44
+        HORZGUIDE, 60
+        HORZGUIDE, 74
+        HORZGUIDE, 90
+        HORZGUIDE, 104
+        HORZGUIDE, 119
+        HORZGUIDE, 133
+        HORZGUIDE, 150
+    END
+
+    IDD_LINETYPEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 36
+        VERTGUIDE, 61
+        VERTGUIDE, 145
+        VERTGUIDE, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 30
+        HORZGUIDE, 44
+        HORZGUIDE, 60
+        HORZGUIDE, 74
+        HORZGUIDE, 90
+        HORZGUIDE, 104
+        HORZGUIDE, 120
+        HORZGUIDE, 133
+    END
+
+    IDD_LINEWIDTHDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 41
+        VERTGUIDE, 60
+        VERTGUIDE, 100
+        VERTGUIDE, 150
+        VERTGUIDE, 161
+        VERTGUIDE, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 30
+        HORZGUIDE, 44
+        HORZGUIDE, 60
+        HORZGUIDE, 74
+        HORZGUIDE, 90
+        HORZGUIDE, 103
+        HORZGUIDE, 120
+        HORZGUIDE, 133
+    END
+
+    IDD_TranslationDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        VERTGUIDE, 60
+        VERTGUIDE, 102
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+        HORZGUIDE, 30
+        HORZGUIDE, 59
+        HORZGUIDE, 90
+        HORZGUIDE, 120
+        HORZGUIDE, 150
+    END
+
+    IDD_RECTDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 30
+        VERTGUIDE, 60
+        VERTGUIDE, 90
+        VERTGUIDE, 120
+        VERTGUIDE, 150
+        VERTGUIDE, 180
+        VERTGUIDE, 210
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 12
+        HORZGUIDE, 30
+        HORZGUIDE, 60
+        HORZGUIDE, 90
+        HORZGUIDE, 120
+        HORZGUIDE, 150
+    END
+
+    IDD_SCALINGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 60
+        VERTGUIDE, 90
+        VERTGUIDE, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 30
+        HORZGUIDE, 60
+        HORZGUIDE, 90
+        HORZGUIDE, 120
+    END
+
+    IDD_ROTATIONDIALOG2D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 60
+        VERTGUIDE, 90
+        VERTGUIDE, 120
+        VERTGUIDE, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 30
+        HORZGUIDE, 62
+        HORZGUIDE, 66
+        HORZGUIDE, 78
+        HORZGUIDE, 90
+        HORZGUIDE, 120
+    END
+
+    IDD_SYMMETRICALDIALOG2D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 60
+        VERTGUIDE, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 30
+        HORZGUIDE, 59
+        HORZGUIDE, 90
+        HORZGUIDE, 121
+    END
+
+    IDD_SHEARDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 30
+        VERTGUIDE, 60
+        VERTGUIDE, 90
+        VERTGUIDE, 120
+        VERTGUIDE, 150
+        VERTGUIDE, 180
+        VERTGUIDE, 210
+        VERTGUIDE, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 30
+        HORZGUIDE, 60
+        HORZGUIDE, 90
+        HORZGUIDE, 120
+        HORZGUIDE, 150
+    END
+
+    IDD_ROTATIONDIALOG3D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 48
+        VERTGUIDE, 60
+        VERTGUIDE, 90
+        VERTGUIDE, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 60
+        HORZGUIDE, 90
+    END
+
+    IDD_SYMMETRICALDIALOG3D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 30
+        VERTGUIDE, 60
+        VERTGUIDE, 90
+        VERTGUIDE, 120
+        VERTGUIDE, 180
+        VERTGUIDE, 210
+        VERTGUIDE, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 31
+        HORZGUIDE, 60
+        HORZGUIDE, 90
+        HORZGUIDE, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_LineDialog AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CircleDIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EllipseDIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LINETYPEDIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LINEWIDTHDIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TranslationDialog AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_RECTDIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SCALINGDIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ROTATIONDIALOG2D AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SYMMETRICALDIALOG2D AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SHEARDIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ROTATIONDIALOG3D AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SYMMETRICALDIALOG3D AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LINETYPEDIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x6f53, 0x696c, 0x0064, 
+    IDC_COMBO1, 0x403, 5, 0
+0x6144, 0x6873, "\000" 
+    IDC_COMBO1, 0x403, 4, 0
+0x6f44, 0x0074, 
+    0
+END
+
+IDD_ROTATIONDIALOG3D DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0x2d58, 0x7841, 0x7369, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d59, 0x7841, 0x7369, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d5a, 0x7841, 0x7369, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ComputerGraphics"
+    IDR_ComputerGraphicTYPE "\nComputerGraphic\nComputerGraphic\n\n\nComputerGraphics.Document\nComputerGraphics.Document"
+    ID_WINDOW_MANAGER       "窗口(&W)..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ComputerGraphics"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以不重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以不重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILE_VIEW           "文件视图"
+    IDS_CLASS_VIEW          "类视图"
+    IDS_OUTPUT_WND          "输出"
+    IDS_PROPERTIES_WND      "属性"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EXPLORER            "资源管理器"
+    IDS_EDIT_MENU           "编辑"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUILD_TAB           "生成"
+    IDS_DEBUG_TAB           "调试"
+    IDS_FIND_TAB            "查找"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\ComputerGraphics.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#include "l.CHS\afxprint.rc"    // 打印/打印预览资源
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"        // MFC 功能区和控制条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
